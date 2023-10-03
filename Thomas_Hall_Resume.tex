@@ -1,0 +1,241 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\educationSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \textbf{$|$ {#2}} & \textbf{\small #3} \\
+      \textit{\small#4} & \textit{\small #5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\myProjectSubheading}[5]{
+  \vspace{2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      {\textbf{#1} $|$ \emph{#2}} & \textbf{\small #3} \\
+      \textit{\small#4} & \textit{\small #5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\specialResumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \bfseries{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\small{#1}} & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+\newcommand{\header}[5]{
+    \noindent
+    {\LARGE\bfseries{#1} 
+     \hfill 
+     \small\raisebox{-0.1\height}\faPhone\ {#2} 
+     \href{mailto:tkhall03@gmail.com}{\raisebox{-0.2\height}\faEnvelope\
+     \underline{#3}} 
+     \href{https://github.com/tkhall03}{\raisebox{-0.2\height}\faGithub\
+     \underline{#4}} -
+     \bfseries{#5}
+     }
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\header{Thomas Hall}{207-381-7246}{tkhall03@gmail.com}{github.com/tkhall03}{College Station, TX}
+        
+\vspace{-8pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {Texas A\&M University}{3.5/4.0}{May 2025}
+      {Bachelor of Science in Computer Science, Minor in Cybersecurity and Mathematics}{College Station, TX}
+      
+  \resumeSubHeadingListEnd
+
+\vspace{-15pt}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer Intern}{May 2023 -- Present}
+      {Aramco - Houston Research Center}{Houston, TX}
+      \resumeItemListStart
+        \resumeItem{Co-developed the autonomous downhole robot KASHF “Kinetic Autonomous Sensing in High Fidelity” for use in oil wells. When commercialized will lead to significant cost savings for the Company.}
+        \resumeItem{Developed all software and communication protocols between robots and the android application I developed.}
+        \resumeItem{Worked on firmware for custom high temperature microcontrollers to be used in downhole robots.}
+        \resumeItem{Worked with Bluetooth LE to develop a communication framework that could be implemented in multiple robots.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Offshore Software Engineering Intern}{May 2022 -- August 2022}
+      {TDI Brooks International}{College Station, TX}
+      \resumeItemListStart
+        \resumeItem{Worked offshore in the middle Gulf of Mexico and Atlantic Ocean deploying experimental Viber-core technology for survey of wind farms and deep-sea oil rigs/pipelines.}
+        \resumeItem{Worked on developing data analysis and visualization software for piston and box cores.}
+        \resumeItem{Conducted tests as efficiently as possible to not backlog samples while being as precise as possible during unpredictable weather conditions.}
+    \resumeItemListEnd
+
+    \specialResumeSubheading
+        {Geotechnical Laboratory Technician}{May 2021 -- August 2021}
+        {TDI Brooks International}{May 2020 -- August 2020}
+        \resumeItemListStart
+        \resumeItem{Conducted geotechnical tests such as Atterberg Limits, Soil Composition, Grain size and vane shear test.}
+        \resumeItem{Expedited critical testing results without compromising sample validity or quality assurance.}
+        \resumeItem{Maintained and prepared equipment to be as precise and accurate during test as possible.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Ski Patroller}{November 2020 – March 2021}
+      {Sunday River Ski Resort}{Newry, ME}
+      \resumeItemListStart
+        \resumeItem{Examine injured persons and administer first aid or cardiopulmonary resuscitation, if necessary, using training and medical supplies in prehospital settings.}
+        \resumeItem{Worked with client relations to maintain a positive relationship between guest and the resort.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, C, Java, Python, HTML/CSS, JavaScript, MySQL} \\
+    }}
+ \end{itemize}
+ \vspace{-20pt}
+ 
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+        \myProjectSubheading{Saudi Arabian Oil Company}{MySQL, C}{June 2018}{Saudi Arabian Oil Company}{Dhahran, KSA}
+          \resumeItemListStart
+            \resumeItem{Project manager leading a team of scouts to create an application and digitize historical paper records for the old expatriate graveyard located in the LIP Dhahran, Saudi Arabia.}
+            \resumeItem{Used SQL and Microsoft Access to develop a database to store all the historical records and incorporated a GIS frontend (with the help of the Saudi Aramco surveying group).}
+          \resumeItemListEnd
+          \vspace{-7pt}
+          
+      \myProjectSubheading{Computer Vision Team Lead}{Python, OpenCV, YOLOv8}{September 2022 – August 2023}{TAMU Robomasters}{College Station, TX}
+          \resumeItemListStart
+            \resumeItem{Elected as the head of the computer vision team by the organization. Collaborated to update the vision model from YOLOv5 to YOLOv8.}
+            \resumeItem{Implemented new multiple armor plate detection using Roboflow and OpenCV. Developed Kalman filters to improve aiming and tracking precision.}
+          \resumeItemListEnd 
+          \vspace{-5pt}
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+
+
+%-----------Leadership / Achievements---------------
+\section{Leadership / Achievements}
+    \vspace{-4pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading{Endorsement by former Minister of Energy}{Dhahran, KSA}
+            \resumeItemListStart
+                \resumeItem{Recognized by the former CEO of Saudi Aramco and Minister of Energy Khalid Al-Falih for my creation of the digital expatriate graveyard application.}
+            \resumeItemListEnd
+        \resumeSubheading{Boy Scouts of America}{June 2017}{Eagle Scout}{Dhahran, KSA}
+            \resumeItemListStart
+                \resumeItem{Lead other scouts teaching them the skills they needed to earn badges and progress through the organization.}
+                \resumeItem{Coordinated the survey of the expatriate graveyard with other scouts and ensured that the data was accurate.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+\end{document}
