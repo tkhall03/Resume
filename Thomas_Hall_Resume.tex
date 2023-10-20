@@ -78,6 +78,13 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\myProjectSubheadingNoSub}[5]{
+  \vspace{2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      {\textbf{#1} $|$ \emph{#2}} & \textbf{\small #3}
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\specialResumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -152,8 +159,8 @@
       {Software Engineer Intern}{May 2023 -- Present}
       {Aramco - Houston Research Center}{Houston, TX}
       \resumeItemListStart
-        \resumeItem{Co-developed the autonomous downhole robot KASHF “Kinetic Autonomous Sensing in High Fidelity” for use in oil wells. When commercialized will lead to significant cost savings for the Company.}
-        \resumeItem{Developed all software and communication protocols between robots and the android application I developed.}
+        \resumeItem{Co-developed the autonomous downhole robot KASHF “Kinetic Autonomous Sensing in High Fidelity” for use in oil wells which will lead to significant cost savings for the Company.}
+        \resumeItem{Engineered software and communication protocols between robots and personally developed Android application.}
         \resumeItem{Worked on firmware for custom high temperature microcontrollers to be used in downhole robots.}
         \resumeItem{Worked with Bluetooth LE to develop a communication framework that could be implemented in multiple robots.}
       \resumeItemListEnd
@@ -162,26 +169,17 @@
       {Offshore Software Engineering Intern}{May 2022 -- August 2022}
       {TDI Brooks International}{College Station, TX}
       \resumeItemListStart
-        \resumeItem{Worked offshore in the middle Gulf of Mexico and Atlantic Ocean deploying experimental Viber-core technology for survey of wind farms and deep-sea oil rigs/pipelines.}
+        \resumeItem{Worked offshore in the Gulf of Mexico and Atlantic Ocean deploying experimental Viber-core technology for survey of wind farms and deep-sea oil rigs/pipelines.}
         \resumeItem{Worked on developing data analysis and visualization software for piston and box cores.}
-        \resumeItem{Conducted tests as efficiently as possible to not backlog samples while being as precise as possible during unpredictable weather conditions.}
+        \resumeItem{Conducted tests as efficiently and precisely as possible to avoid sample backlog during unpredictable weather conditions.}
     \resumeItemListEnd
 
     \specialResumeSubheading
         {Geotechnical Laboratory Technician}{May 2021 -- August 2021}
         {TDI Brooks International}{May 2020 -- August 2020}
         \resumeItemListStart
-        \resumeItem{Conducted geotechnical tests such as Atterberg Limits, Soil Composition, Grain size and vane shear test.}
+        \resumeItem{Conducted geotechnical tests such as Atterberg Limits, Soil Composition, Grain size, and vane shear test. \hspace{1mm}}
         \resumeItem{Expedited critical testing results without compromising sample validity or quality assurance.}
-        \resumeItem{Maintained and prepared equipment to be as precise and accurate during test as possible.}
-    \resumeItemListEnd
-
-    \resumeSubheading
-      {Ski Patroller}{November 2020 – March 2021}
-      {Sunday River Ski Resort}{Newry, ME}
-      \resumeItemListStart
-        \resumeItem{Examine injured persons and administer first aid or cardiopulmonary resuscitation, if necessary, using training and medical supplies in prehospital settings.}
-        \resumeItem{Worked with client relations to maintain a positive relationship between guest and the resort.}
     \resumeItemListEnd
     
   \resumeSubHeadingListEnd
@@ -191,7 +189,8 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C++, C, Java, Python, HTML/CSS, JavaScript, MySQL} \\
+     \textbf{Languages}{: C++, C, Java, Python, HTML/CSS, JavaScript, MySQL} \\ 
+     \textbf{Frameworks}{: ReactJS, Next.js, Tailwind CSS, Flask} \\
     }}
  \end{itemize}
  \vspace{-20pt}
@@ -200,26 +199,30 @@
 \section{Projects}
     \vspace{-5pt}
     \resumeSubHeadingListStart
-
-        \myProjectSubheading{Saudi Arabian Oil Company}{MySQL, C}{June 2018}{Saudi Arabian Oil Company}{Dhahran, KSA}
+       \myProjectSubheading{Code for Good Hackathon}{React, Next.js, Flask, Tailwind CSS}{October 2023}{JPMorgan Chase \& Co}{Plano, TX}
           \resumeItemListStart
-            \resumeItem{Project manager leading a team of scouts to create an application and digitize historical paper records for the old expatriate graveyard located in the LIP Dhahran, Saudi Arabia.}
-            \resumeItem{Used SQL and Microsoft Access to develop a database to store all the historical records and incorporated a GIS frontend (with the help of the Saudi Aramco surveying group).}
+            \resumeItem{Competed with a group of students to design and develop a full stack application for the non profit Mothers Against Drunk Driving.}
+            \resumeItem{Developed a user interface using React that featured leaderboards, driving reports, and various utilities. This interface used a custom API built in Next.js to communicate with the backend.}
+            \resumeItem{Implemented backend with Flask; when given user location data over the course of a drive, it generated a driving score using an algorithm design by our team.}
           \resumeItemListEnd
           \vspace{-7pt}
           
       \myProjectSubheading{Computer Vision Team Lead}{Python, OpenCV, YOLOv8}{September 2022 – August 2023}{TAMU Robomasters}{College Station, TX}
           \resumeItemListStart
-            \resumeItem{Elected as the head of the computer vision team by the organization. Collaborated to update the vision model from YOLOv5 to YOLOv8.}
+            \resumeItem{As the elected head of the computer vision team lead the team to update the vision model from YOLOv5 to YOLOv8.}
             \resumeItem{Implemented new multiple armor plate detection using Roboflow and OpenCV. Developed Kalman filters to improve aiming and tracking precision.}
           \resumeItemListEnd 
+          \vspace{-7pt}
+
+        \myProjectSubheading{Expatriate Graveyard Database}{MySQL, C}{June 2018}{Saudi Arabian Oil Company}{Dhahran, KSA}
+          \resumeItemListStart
+            \resumeItem{Project manager leading a team of scouts to create an application and digitize historical paper records for the old expatriate graveyard located in the LIP Dhahran, Saudi Arabia.}
+            \resumeItem{Developed a database to store all the historical records using SQL and Microsoft Access and incorporated a GIS frontend with the help of the Saudi Aramco surveying group.}
+          \resumeItemListEnd
           \vspace{-5pt}
+          
     \resumeSubHeadingListEnd
-\vspace{-15pt}
-
-
-%
-
+\vspace{-12pt}
 
 %-----------Leadership / Achievements---------------
 \section{Leadership / Achievements}
@@ -232,7 +235,6 @@
         \resumeSubheading{Boy Scouts of America}{June 2017}{Eagle Scout}{Dhahran, KSA}
             \resumeItemListStart
                 \resumeItem{Lead other scouts teaching them the skills they needed to earn badges and progress through the organization.}
-                \resumeItem{Coordinated the survey of the expatriate graveyard with other scouts and ensured that the data was accurate.}
             \resumeItemListEnd
         
     \resumeSubHeadingListEnd
